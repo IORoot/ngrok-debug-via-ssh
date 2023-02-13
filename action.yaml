@@ -42,7 +42,7 @@ runs:
           printf " [DONE]\n\n"
           
           echo "# Change the SSH user password"
-            echo "${{ inputs.SSH_PASS }}\n${{ inputs.SSH_PASS }}" | sudo passwd $(cat ssh_user)
+            echo "${{ inputs.SSH_PASS }}\n${{ inputs.SSH_PASS }}" | passwd $(cat ssh_user)
         
       shell: bash
 
