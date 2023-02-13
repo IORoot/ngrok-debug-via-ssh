@@ -90,7 +90,7 @@ runs:
           echo "# Change the SSH user password"
             net user $env:UserName ${{ inputs.SSH_PASS }}
         }
-      shell: pwsh
+      shell: bash
 
     - name: Install and setup ngrok
       run: |
